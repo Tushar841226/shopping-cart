@@ -29,7 +29,6 @@ public class UserDao {
             	user.setEmail(rs.getString("email"));
             }
         } catch (SQLException e) {
-        	e.printStackTrace();
             System.out.print(e.getMessage());
         }
         return user;
