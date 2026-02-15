@@ -4,14 +4,14 @@ public class Product {
 	private int id;
 	private String name;
 	private String category;
-	private Double price;
+	private String price;
 	private String image;
 	
 	public Product() {
 	
 	}
 
-	public Product(int id, String name, String category, Double price, String image) {
+	public Product(int id, String name, String category, String price, String image) {
 
 		this.id = id;
 		this.name = name;
@@ -44,11 +44,11 @@ public class Product {
 		this.category = category;
 	}
 
-	public Double getPrice() {
+	public String getPrice() {
 		return price;
 	}
 
-	public void setPrice(Double price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
 
@@ -58,12 +58,6 @@ public class Product {
 
 	public void setImage(String image) {
 		this.image = image;
-	}
-
-	@Override
-	public String toString() {
-		return "Product [id=" + id + ", name=" + name + ", category=" + category + ", price=" + price + ", image="
-				+ image + "]";
 	}
 	
 	
